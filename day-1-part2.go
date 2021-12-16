@@ -33,17 +33,17 @@ func ReadToLines2(rd io.Reader) []string {
 func Part2(lines []string) {
 	ejex := 0
 	ejey := 0
-	eje := 0
+	poss := 0
 
 	for _, v := range lines {
 		order := 0
 		if diagnosis, _ := fmt.Sscanf(v, "forward %d", &order); diagnosis > 0 {
 			ejex += order
-			ejey += eje * order
+			ejey += poss * order
 		} else if diagnosis, _ := fmt.Sscanf(v, "down %d", &order); diagnosis > 0 {
-			eje += order
+			poss += order
 		} else if diagnosis, _ := fmt.Sscanf(v, "up %d", &order); diagnosis > 0 {
-			eje -= order
+			poss -= order
 		}
 	}
 
