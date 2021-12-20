@@ -46,4 +46,5 @@ func main() {
 
 	d1p1(lines)
 	d1p2(nbrs)
+	d2p1(lines)
 }

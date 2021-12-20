@@ -27,7 +27,7 @@ func d1p2(nbrs []int) int {
 	up := 0
 	for i, num := range nbrs[3:] {
 		fmt.Printf("%d: %d, %d\n", i, num, nbrs[i])
-		if num < nbrs[i] {
+		if num > nbrs[i] {
 			up++
 		}
 	}
