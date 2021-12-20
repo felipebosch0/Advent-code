@@ -16,7 +16,6 @@ func ReadToLines(rd io.Reader) []string {
 
 	for {
 		text, err := reader.ReadString('\n')
-
 		if err == io.EOF {
 			break
 		}
@@ -49,7 +48,7 @@ func main() {
 
 	d1p2(nbrs)
 	d1pX(lines, 1)
-	d1pXX(nbrs, 2)
+	d1pXX(nbrs, 1)
 	d1pX(lines, 3)
 	d1pXX(nbrs, 3)
 	d2p1(lines)
